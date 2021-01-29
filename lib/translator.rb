@@ -17,7 +17,7 @@ end
   boob = library.keys.find do |key|
     library[key][:japanese] == value 
   end 
-  value ? boob : "Sorry, that emoticon was not found"
+  boob ? boob : "Sorry, that emoticon was not found"
 end 
 
 
