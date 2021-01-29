@@ -14,7 +14,7 @@ end
   
   def get_english_meaning(file, value)
   library = load_library(file)
-  library.keys.find do |key|
+  boob = library.keys.find do |key|
     library[key][:japanese] == value
   end 
   value ? value : "Sorry, that emoticon was not found"
