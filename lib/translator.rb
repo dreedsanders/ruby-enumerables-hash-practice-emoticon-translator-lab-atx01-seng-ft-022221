@@ -14,11 +14,10 @@ end
   
   def get_english_meaning(file, value)
   library = load_library(file)
-  boob = library.keys.find do |key|
-    library[key][:japanese] == value 
-    binding.pry 
+  library.keys.find do |key|
+    library[key][:japanese] == value
   end 
-  boob ? boob : "Sorry, that emoticon was not found"
+  value ? value : "Sorry, that emoticon was not found"
 end 
 
 
