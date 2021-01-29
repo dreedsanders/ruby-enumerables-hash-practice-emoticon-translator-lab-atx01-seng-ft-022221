@@ -14,6 +14,7 @@ end
   
   def get_english_meaning(file, value)
   library = load_library(file)
+  binding.pry 
   value = library.keys.find do |key|
     library[key][:japanese] == value 
   end 
